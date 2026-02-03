@@ -1,10 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Docker Jenkins Demo</title>
+    <meta charset="UTF-8">
+    <title>Docker & Jenkins Web Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+            color: #333;
+        }
+
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0d6efd;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #0d6efd;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello World 🌍</h1>
-    <h2>Website running using Docker & Jenkins</h2>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🚀 Docker & Jenkins Web Application</h1>
+        <p>Automated Deployment using DevOps Tools</p>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            This website is created as part of a DevOps case study to demonstrate
+            the integration of <strong>GitHub</strong>, <strong>Jenkins</strong>,
+            and <strong>Docker</strong>. The goal of this project is to automate
+            the process of building and deploying a web application using
+            continuous integration and containerization.
+        </p>
+
+        <p>
+            The source code of this website is stored in a GitHub repository.
+            Jenkins fetches the code automatically, builds a Docker image using
+            a Dockerfile, and runs the application inside a Docker container.
+            The website is then accessed using a web browser through a local port.
+        </p>
+    </section>
+
+    <!-- TECHNOLOGY SECTION -->
+    <section>
+        <h2>Technologies Used</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>
+                    GitHub is used as a version control platform to store and manage
+                    the website source code. It enables collaboration and easy
+                    access to the project files.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Jenkins</h3>
+                <p>
+                    Jenkins is an automation server used to perform continuous
+                    integration. It pulls code from GitHub and builds the Docker
+                    image automatically.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Docker</h3>
+                <p>
+                    Docker is a containerization platform that packages the
+                    application and its dependencies into a lightweight container,
+                    ensuring consistent execution.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section>
+        <h2>Deployment Process</h2>
+        <p>
+            The deployment process starts with uploading the website code to
+            GitHub. Jenkins then accesses the repository and creates a build
+            using Docker. The Docker image is run as a container and the website
+            is deployed on a local server.
+        </p>
+
+        <p>
+            This automated workflow reduces manual effort, improves efficiency,
+            and ensures faster and reliable deployment of applications.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Docker & Jenkins Demo Project</p>
+        <p>Created for Academic and Learning Purposes</p>
+    </footer>
+
 </body>
 </html>
